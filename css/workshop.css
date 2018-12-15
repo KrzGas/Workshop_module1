@@ -92,7 +92,7 @@ main {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    background: rgba(225, 225, 225, 1);
+    background: linear-gradient(to bottom, rgba(184,184,184,1) 0%, rgba(168,168,168,1) 49%, rgba(179,179,179,1) 50%, rgba(184,184,184,1) 100%);
     padding: 25px;
 }
 
@@ -119,7 +119,7 @@ main {
 .article1_button {
     background-color: darkturquoise;
     color: white;
-    padding: 10px 10px;
+    padding: 5px 10px;
     width: 250px;
     border-radius: 10px;
     font-size: 24px;
@@ -128,29 +128,66 @@ main {
 .article2-wrapper {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    margin-top: 25px;
+    align-items: flex-start;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 25px;
+    height: 300px;
 }
 
-.article2-img1 {
+.article2-image {
     flex: 0 1 200px;
     padding: 0 20px;
+    position: relative;
 }
 
-article2-img2 {
-    flex: 0 1 200px;
-    padding: 0 20px;
+.underline {
+    position: relative;
+}
+
+.article2-image-item {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 329px;
+    height: 50px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.underline:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 150px;
+    height: 5px;
+    top: 100%;
+    background-color: darkturquoise;
+    border-radius: 5px;
 }
 
 .article2-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid grey;
+    position: relative;
+    padding: 10px;
+}
+
+.article2-image-item-line2 {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 150px;
+    height: 5px;
+    top: 28px;
+    left: -5px;
+    background-color: darkturquoise;
+    border-radius: 5px;
+    margin-left: 15px;
 }
 
 .article2-content p {
