@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    font-size: 15px;
+}
+
+.centering-container {
+    width: 1063px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header_menu {
+    list-style-type: none;
+}
+
+.header_menu li {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+}
+
+.blue-font {
+    color: darkturquoise;
+}
+
+.header_menu li:first-child {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: black;
+    padding: 5px 10px;
+    left: -15px;
+    margin-top: 30px;
+}
+
+.dropdown::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 25px 12.5px;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    top: -20px;
+    right: 60px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.arrow:first-child {
+    font-size: 55px;
+    padding-left: 25px;
+}
+
+.arrow:last-child {
+    font-size: 55px;
+    padding-right: 25px;
+}
+
+.article1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: rgba(225, 225, 225, 1);
+    padding: 25px;
+}
+
+.article1-image {
+    flex: 0 1 200px;
+}
+
+.article1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article1-content h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.article1-content p {
+    line-height: 30px;
+}
+
+.article1_button {
+    background-color: darkturquoise;
+    color: white;
+    padding: 10px 10px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.article2-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.article2-img1 {
+    flex: 0 1 200px;
+    padding: 0 20px;
+}
+
+article2-img2 {
+    flex: 0 1 200px;
+    padding: 0 20px;
+}
+
+.article2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.article2-content p {
+    padding: 10px;
+}
