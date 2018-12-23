@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: darkgray;
+    padding: 25px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-text {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.footer-text-on {
+    font-weight: 900;
+}
+
+.footer-socialmedia {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-socialmedia img {
+    width: 100%;
+    flex: 0 1 25%;
+}

@@ -123,6 +123,7 @@ section:nth-child(3) {
     width: 75px;
     border-radius: 10px;
     text-align: center;
+    border-style: none;
 }
 
 .article3-offer-button:hover {
