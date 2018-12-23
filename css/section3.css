@@ -1,0 +1,149 @@
+section:nth-child(3) {
+    background-color: lightgray;
+}
+
+.article3-title {
+    padding-top: 10px;
+}
+
+.article3-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding-top: 55px;
+    height: 400px;
+}
+
+.article3-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 25px 0;
+    border: solid 1px darkgray;
+    background-color: white;
+    min-width: 200px;
+    min-height: 275px;
+    position: relative;
+}
+
+.article3-offer:hover {
+    background-color: darkturquoise;
+}
+
+.article3-offer-text:hover {
+    color: darkturquoise;
+}
+
+.article3-offer-circle:hover {
+    background-color: white;
+}
+
+.article3-offer-dot1 {
+    display: block;
+    content: '';
+    border: solid 1px lightgray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    top: -25px;
+    left: 82px;
+    position: absolute;
+    background-color: white;
+}
+
+.article3-offer-dot2 {
+    display: block;
+    content: '';
+    border: solid 1px darkgray;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    top: -16px;
+    left: 91px;
+    position: absolute;
+    background-color: darkgray;
+}
+
+.article3-plan {
+    color: darkturquoise;
+    position: absolute;
+    top: 25px;
+}
+
+.article3-plan:hover {
+    color: white;
+}
+
+.article3-offer-circle {
+    border: solid 1px lightgray;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+}
+
+.article3-offer-text {
+    text-align: center;
+    color: lightgray;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    font-weight: bold;
+}
+
+.article3-offer1-details {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    top: 150px;
+}
+
+.article3-offer1-details li {
+    background-color: lightgray;
+    padding: 5px 0;
+}
+
+.article3-offer1-details li:nth-child(2n) {
+    background-color: darkgrey;
+}
+
+.article3-offer-button {
+    position: absolute;
+    bottom: 5px;
+    background-color: darkturquoise;
+    color: white;
+    padding: 5px 10px;
+    width: 75px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.article3-offer-button:hover {
+    background-color: white;
+    color: darkturquoise;
+}
+
+.article3-offer2-details {
+    padding: 15px 0;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+}
+
+.article3-offer2-details li {
+    background-color: darkgrey ;
+    padding: 5px 0;
+}
+
+.article3-offer2-details li:nth-child(2n) {
+    background-color: lightgray;
+}

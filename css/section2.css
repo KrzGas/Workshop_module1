@@ -1,0 +1,40 @@
+.article2-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    height: 300px;
+}
+
+.article2-image {
+    flex: 0 1 200px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.article2-image-item {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 329px;
+    height: 50px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.article2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid grey;
+    position: relative;
+    padding: 10px;
+}
+
+.article2-content p {
+    padding: 10px;
+}
