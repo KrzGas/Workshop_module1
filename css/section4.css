@@ -1,3 +1,8 @@
+section:nth-child(4) {
+    position: relative;
+    background-color: #fffffe;
+}
+
 .article4-title {
     padding-top: 10px;
 }
@@ -11,7 +16,7 @@
 
 .article4-form {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-content: space-around;
     padding-top: 35px;
@@ -19,11 +24,19 @@
 
 .article4-input {
     display: block;
-    padding: 25px 5px;
-    width: 500px;
-    heigth: 50px;
-    border: 1px solid darkturquoise;
-    font-size: 18px;
+    padding: 20px 5px;
+    min-width: 500px;
+    border: 1px solid #3db2a1;
+    font-size: 20px;
+}
+
+.article4-input-textarea {
+    display: block;
+    border: 1px solid #3db2a1;
+    font-size: 20px;
+    resize: none;
+    min-width: 500px;
+    min-height: 120px;
 }
 
 .article4-form2 {
@@ -38,7 +51,7 @@
 
 .article4-image {
     flex: 0 1 75%;
-    max-width:100%;
+    max-width: 100%;
 }
 
 .shortform {
@@ -47,6 +60,7 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    position: relative;
 }
 
 .shortform-check {
@@ -56,17 +70,64 @@
     align-content: center;
 }
 
-.article4-image2 {
-    border: 1px solid grey;
-    margin-right: 5px;
+.article4-check-label {
+    display: block;
+}
+
+.article4-check-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.article4-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #3db2a1;
+}
+
+.article4-check-label:hover input ~ .article4-checkmark {
+    background-color: #fff;
+}
+
+.article4-check-label input:checked ~ .article4-checkmark {
+    background-color: #fff;
+}
+
+.article4-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.article4-check-label input:checked ~ .article4-checkmark:after {
+    display: block;
+}
+
+.article4-check-label .article4-checkmark:after {
+    background: url("../images/form_ok.jpg");
+    width: 48px;
+    height: 40px;
+}
+
+.shortform-text {
+    color: #dadada;
+    margin-left: 70px;
 }
 
 .article4-submit {
-    background-color: darkturquoise;
+    margin-top: 25px;
+    background-color: #3db2a1;
     color: white;
     padding: 5px 10px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 18px;
     border-style: none;
     font-weight: 700;

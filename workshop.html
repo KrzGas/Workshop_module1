@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/workshop.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -22,6 +22,8 @@
             <ul class="header_menu">
                 <li>o firmie
                     <ul class="dropdown">
+                        <span class="dropdown-triangle">
+                        </span>
                         <li>Aktualności</li>
                         <li>Nasz team</li>
                         <li>Historia</li>
@@ -37,12 +39,11 @@
 <main>
     <section>
         <div class="centering-container">
-            <article class="article1">
+        <article class="article1">
                 <div class="arrow blue-font"><</div>
                 <div class="article1-image">
                     <img src="images/black_chair.png" alt="black chair"/>
                 </div>
-
                 <div class="article1-content">
                     <h4>SIT <span class="blue-font">ON</span> OUR <span class="blue-font">CHAIR</span></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -51,9 +52,11 @@
                     <button class="article1_button">ZOBACZ WIĘCEJ</button>
                 </div>
                 <div class="arrow blue-font">></div>
-            </article>
+
+        </article>
         </div>
     </section>
+
     <section>
         <div class="centering-container">
             <div class="article2-wrapper">
@@ -129,20 +132,22 @@
                         <li>Gwarancja 6 lat</li>
                         <li>Porady projektanta</li>
                     </ul>
-                    <button class="article3-offer-button">DOŁĄCZ</button>
+                    <button type="button" class="article3-offer-button">DOŁĄCZ</button>
                 </article>
 
             </div>
         </div>
     </section>
+
+
     <section>
         <div class="centering-container">
             <h4 class="article4-title underline">KONTAKT</h4>
             <div class="article4-wrapper">
                 <article class="article4-form">
-                    <input class="article4-input" type="text" id="name" placeholder="Imię"/><br/>
-                    <input class="article4-input" type="email" id="mail" placeholder="Email"/><br/>
-                    <textarea class="article4-input" placeholder="Wiadomość"></textarea>
+                    <input class="article4-input" type="text" id="name" placeholder="Imię"/>
+                    <input class="article4-input" type="email" id="mail" placeholder="email"/>
+                    <textarea class="article4-input-textarea" placeholder="Wiadomość"></textarea>
                 </article>
                 <article class="article4-form2">
                     <div class="article4-image">
@@ -150,10 +155,11 @@
                     </div>
                     <div class="shortform">
                         <div class="shortform-check">
-                            <div class="article4-image2">
-                                <img src="images/form_ok.jpg" alt="ok"/>
-                            </div>
-                            Zgadzam się na przetwarzanie danych osobowych
+                            <label class="article4-check-label" for="czekus">
+                                <input id="czekus" type="checkbox"/>
+                                <span class="article4-checkmark"></span>
+                            </label>
+                            <span class="shortform-text">Zgadzam się na przetwarzanie danych osobowych</span>
                         </div>
                         <button class="article4-submit">WYŚLIJ</button>
                     </div>
@@ -181,6 +187,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

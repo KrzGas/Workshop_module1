@@ -5,10 +5,14 @@ header {
     font-size: 13px;
     position: fixed;
     top: 0;
+    z-index: -1;
+    letter-spacing: 1px;
+    padding: 10px 0;
 }
 
 header h1 {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 nav {
@@ -16,7 +20,6 @@ nav {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 12px 0;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -29,31 +32,40 @@ nav {
     display: inline-block;
     padding: 0 15px;
     position: relative;
+    font-size: 14px;
 }
 
 .header_menu li:first-child {
-    display: inline-block;
-    padding: 0 15px;
-    position: relative;
+    cursor: pointer;
 }
 
 .dropdown {
     position: absolute;
     background-color: black;
-    padding: 5px 10px;
-    left: -15px;
-    margin-top: 30px;
+    padding: 5px 0;
+    left: 0;
+    margin-top: 20px;
+    font-weight: 400;
+    text-transform: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.dropdown::before {
+.dropdown-triangle {
     display: block;
     content: '';
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6px 12px 6px;
+    border-width: 0 8px 9px 8px;
     border-color: transparent transparent black transparent;
     position: absolute;
-    top: -12px;
-    right: 65px;
+    top: -8px;
+    left: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.header_menu li:first-child:hover .dropdown, .dropdown-triangle {
+    opacity: 1;
 }

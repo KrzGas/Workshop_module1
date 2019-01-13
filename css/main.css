@@ -8,13 +8,17 @@ main {
     margin-top: 50px;
 }
 
+body {
+    z-index: 10;
+}
+
 .centering-container {
-    width: 1063px;
+    width: 1065px;
     margin: 0 auto;
 }
 
 .blue-font {
-    color: darkturquoise;
+    color: #3cb3a8;
 }
 
 .underline {
@@ -28,6 +32,6 @@ main {
     width: 150px;
     height: 5px;
     top: 100%;
-    background-color: darkturquoise;
+    background-color: #41bdaa;
     border-radius: 5px;
 }

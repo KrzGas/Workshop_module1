@@ -1,5 +1,5 @@
 section:nth-child(3) {
-    background-color: lightgray;
+    background-color: #f2f2f2;
 }
 
 .article3-title {
@@ -19,81 +19,63 @@ section:nth-child(3) {
 .article3-offer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    align-content: center;
-    padding: 25px 0;
-    border: solid 1px darkgray;
-    background-color: white;
+    padding: 15px 0;
+    border: solid 1px #d9d9d9;
+    background-color: #f9f9f9;
     min-width: 200px;
     min-height: 275px;
     position: relative;
 }
 
-.article3-offer:hover {
-    background-color: darkturquoise;
-}
-
-.article3-offer-text:hover {
-    color: darkturquoise;
-}
-
-.article3-offer-circle:hover {
-    background-color: white;
-}
-
 .article3-offer-dot1 {
     display: block;
     content: '';
-    border: solid 1px lightgray;
+    border: solid 1px #dbdbdb;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     top: -25px;
     left: 82px;
     position: absolute;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .article3-offer-dot2 {
     display: block;
     content: '';
-    border: solid 1px darkgray;
+    border: solid 1px #c3c4c3;
     border-radius: 50%;
     width: 17px;
     height: 17px;
     top: -16px;
     left: 91px;
     position: absolute;
-    background-color: darkgray;
+    background-color: #c3c4c3;
 }
 
 .article3-plan {
-    color: darkturquoise;
-    position: absolute;
-    top: 25px;
-}
-
-.article3-plan:hover {
-    color: white;
+    color: #3db2a1;
+    padding: 5px 0;
 }
 
 .article3-offer-circle {
     border: solid 1px lightgray;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 60px;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
 }
 
 .article3-offer-text {
     text-align: center;
-    color: lightgray;
-    position: absolute;
-    left: 15px;
-    top: 25px;
-    font-weight: bold;
+    color: #c2c2c2;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .article3-offer1-details {
@@ -101,34 +83,15 @@ section:nth-child(3) {
     text-align: center;
     width: 100%;
     list-style-type: none;
-    position: absolute;
-    top: 150px;
 }
 
 .article3-offer1-details li {
-    background-color: lightgray;
+    background-color: #e5e5e5;
     padding: 5px 0;
 }
 
 .article3-offer1-details li:nth-child(2n) {
-    background-color: darkgrey;
-}
-
-.article3-offer-button {
-    position: absolute;
-    bottom: 5px;
-    background-color: darkturquoise;
-    color: white;
-    padding: 5px 10px;
-    width: 75px;
-    border-radius: 10px;
-    text-align: center;
-    border-style: none;
-}
-
-.article3-offer-button:hover {
-    background-color: white;
-    color: darkturquoise;
+    background-color: #f2f2f2;
 }
 
 .article3-offer2-details {
@@ -136,15 +99,53 @@ section:nth-child(3) {
     text-align: center;
     list-style-type: none;
     width: 100%;
-    position: absolute;
-    top: 150px;
 }
 
 .article3-offer2-details li {
-    background-color: darkgrey ;
+    background-color: #ffffff;
     padding: 5px 0;
 }
 
 .article3-offer2-details li:nth-child(2n) {
-    background-color: lightgray;
+    background-color: #f2f2f2;
+}
+
+.article3-offer-button {
+    position: absolute;
+    bottom: 5px;
+    background-color: #3db2a1;
+    color: #ffffff;
+    padding: 5px 10px;
+    width: 75px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: none;
+}
+
+.article3-offer:hover {
+    background-color: #42bead;
+    border: solid 1px #42bead;
+}
+
+.article3-offer:hover .article3-offer-dot1 {
+    border: solid 1px #43bcb3;
+    background-color: #43bcb3;
+}
+
+.article3-offer:hover .article3-offer-dot2, .article3-offer-circle {
+    background-color: #ffffff;
+}
+
+.article3-offer:hover .article3-plan {
+    color: #ffffff;
+}
+
+.article3-offer:hover .article3-offer-text {
+    color: #43bcb3;
+    font-weight: 900;
+}
+
+.article3-offer:hover .article3-offer-button {
+    background-color: #ffffff;
+    color: #43bcb3;
 }
