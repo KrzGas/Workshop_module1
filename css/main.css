@@ -21,11 +21,11 @@ body {
     color: #3cb3a8;
 }
 
-.underline {
+.font-highlight {
     position: relative;
 }
 
-.underline:after {
+.font-highlight:after {
     position: absolute;
     display: block;
     content: '';

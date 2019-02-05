@@ -2,11 +2,11 @@ section:nth-child(3) {
     background-color: #f2f2f2;
 }
 
-.article3-title {
+.price-title {
     padding-top: 10px;
 }
 
-.article3-wrapper {
+.price-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -16,7 +16,7 @@ section:nth-child(3) {
     height: 400px;
 }
 
-.article3-offer {
+.price-offer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@ section:nth-child(3) {
     position: relative;
 }
 
-.article3-offer-dot1 {
+.price-offer-dot1 {
     display: block;
     content: '';
     border: solid 1px #dbdbdb;
@@ -41,7 +41,7 @@ section:nth-child(3) {
     background-color: #ffffff;
 }
 
-.article3-offer-dot2 {
+.price-offer-dot2 {
     display: block;
     content: '';
     border: solid 1px #c3c4c3;
@@ -54,12 +54,12 @@ section:nth-child(3) {
     background-color: #c3c4c3;
 }
 
-.article3-plan {
+.price-plan {
     color: #3db2a1;
     padding: 5px 0;
 }
 
-.article3-offer-circle {
+.price-offer-circle {
     border: solid 1px lightgray;
     border-radius: 50%;
     width: 85px;
@@ -71,46 +71,30 @@ section:nth-child(3) {
     margin-top: 5px;
 }
 
-.article3-offer-text {
+.price-offer-text {
     text-align: center;
     color: #c2c2c2;
     font-weight: 700;
     font-size: 15px;
 }
 
-.article3-offer1-details {
+.price-offer-details, .price-offer-details2 {
     padding: 15px 0;
     text-align: center;
     width: 100%;
     list-style-type: none;
 }
 
-.article3-offer1-details li {
+.price-offer-details li {
     background-color: #e5e5e5;
     padding: 5px 0;
 }
 
-.article3-offer1-details li:nth-child(2n) {
+.price-offer-details li:nth-child(2n) {
     background-color: #f2f2f2;
 }
 
-.article3-offer2-details {
-    padding: 15px 0;
-    text-align: center;
-    list-style-type: none;
-    width: 100%;
-}
-
-.article3-offer2-details li {
-    background-color: #ffffff;
-    padding: 5px 0;
-}
-
-.article3-offer2-details li:nth-child(2n) {
-    background-color: #f2f2f2;
-}
-
-.article3-offer-button {
+.price-offer-button {
     position: absolute;
     bottom: 5px;
     background-color: #3db2a1;
@@ -122,25 +106,25 @@ section:nth-child(3) {
     border-style: none;
 }
 
-.article3-offer:hover {
+.price-offer:hover {
     background-color: #42bead;
     border: solid 1px #42bead;
 }
 
-.article3-offer:hover .article3-offer-dot1 {
+.price-offer:hover .price-offer-dot1 {
     border: solid 1px #43bcb3;
     background-color: #43bcb3;
 }
 
-.article3-offer:hover .article3-offer-dot2, .article3-offer-circle {
+.price-offer:hover .price-offer-dot2, .price-offer-circle {
     background-color: #ffffff;
 }
 
-.article3-offer:hover .article3-plan {
+.price-offer:hover .price-plan {
     color: #ffffff;
 }
 
-.article3-offer:hover .article3-offer-text {
+.price-offer:hover .price-offer-text {
     color: #43bcb3;
     font-weight: 900;
 }

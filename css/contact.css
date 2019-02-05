@@ -3,18 +3,18 @@ section:nth-child(4) {
     background-color: #fffffe;
 }
 
-.article4-title {
+.contact-title {
     padding-top: 10px;
 }
 
-.article4-wrapper {
+.contact-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
-.article4-form {
+.contact-form {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -22,7 +22,7 @@ section:nth-child(4) {
     padding-top: 35px;
 }
 
-.article4-input {
+.contact-input {
     display: block;
     padding: 20px 5px;
     min-width: 500px;
@@ -30,7 +30,7 @@ section:nth-child(4) {
     font-size: 20px;
 }
 
-.article4-input-textarea {
+.contact-input-textarea {
     display: block;
     border: 1px solid #3db2a1;
     font-size: 20px;
@@ -39,7 +39,7 @@ section:nth-child(4) {
     min-height: 120px;
 }
 
-.article4-form2 {
+.contact-form2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +49,7 @@ section:nth-child(4) {
     max-width: 400px;
 }
 
-.article4-image {
+.contact-image {
     flex: 0 1 75%;
     max-width: 100%;
 }
@@ -70,11 +70,11 @@ section:nth-child(4) {
     align-content: center;
 }
 
-.article4-check-label {
+.contact-check-label {
     display: block;
 }
 
-.article4-check-label input {
+.contact-check-label input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -82,7 +82,7 @@ section:nth-child(4) {
     width: 0;
 }
 
-.article4-checkmark {
+.contact-checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,25 +92,25 @@ section:nth-child(4) {
     border: 1px solid #3db2a1;
 }
 
-.article4-check-label:hover input ~ .article4-checkmark {
+.contact-check-label:hover input ~ .contact-checkmark {
     background-color: #fff;
 }
 
-.article4-check-label input:checked ~ .article4-checkmark {
+.contact-check-label input:checked ~ .contact-checkmark {
     background-color: #fff;
 }
 
-.article4-checkmark:after {
+.contact-checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.article4-check-label input:checked ~ .article4-checkmark:after {
+.contact-check-label input:checked ~ .contact-checkmark:after {
     display: block;
 }
 
-.article4-check-label .article4-checkmark:after {
+.contact-check-label .contact-checkmark:after {
     background: url("../images/form_ok.jpg");
     width: 48px;
     height: 40px;
@@ -121,7 +121,7 @@ section:nth-child(4) {
     margin-left: 70px;
 }
 
-.article4-submit {
+.contact-submit {
     margin-top: 25px;
     background-color: #3db2a1;
     color: white;

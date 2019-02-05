@@ -24,18 +24,18 @@ nav {
     font-weight: 700;
 }
 
-.header_menu {
+.header-menu {
     list-style-type: none;
 }
 
-.header_menu li {
+.header-menu li {
     display: inline-block;
     padding: 0 15px;
     position: relative;
     font-size: 14px;
 }
 
-.header_menu li:first-child {
+.header-menu li:first-child {
     cursor: pointer;
 }
 
@@ -66,6 +66,6 @@ nav {
     transition: opacity 1s ease-in-out;
 }
 
-.header_menu li:first-child:hover .dropdown, .dropdown-triangle {
+.header-menu li:first-child:hover .dropdown, .dropdown-triangle {
     opacity: 1;
 }
